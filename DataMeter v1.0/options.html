@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DataMeter for YouTube Options</title>
+  <!-- Add your CSS styles here -->
+  <!-- Add the crossorigin attribute to the manifest link -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials" />
+</head>
+<body>
+  <h1>Options</h1>
+  <form id="options-form">
+    <label for="quality">Default Quality:</label>
+    <select id="quality" name="quality">
+      <option value="144p">144p</option>
+      <option value="240p">240p</option>
+      <!-- Add other quality options here -->
+    </select>
+    <button type="submit">Save</button>
+  </form>
+  <script src="options.js" crossorigin="use-credentials"></script> <!-- Add the crossorigin attribute here -->
+</body>
+</html>

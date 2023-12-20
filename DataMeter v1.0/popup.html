@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataMeter Settings</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            width: 300px; /* Set a specific width for the popup */
+        }
+        .logo {
+            display: block;
+            width: 300px;
+            height: 56px;
+            margin: 0 auto 20px; /* Center logo and add space below */
+        }
+        h2 {
+            color: #5f6368;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 5px;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dfe1e5;
+            border-radius: 4px;
+            box-sizing: border-box;
+            -webkit-appearance: none; /* Removes default styling for select on WebKit browsers */
+            -moz-appearance: none;    /* Removes default styling for select on Firefox browsers */
+        }
+        button {
+            background-color: #1a73e8;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #1765c0;
+        }
+        button:active {
+            background-color: #125ea8;
+        }
+        #status {
+            color: #34a853;
+            font-size: 14px;
+            text-align: center;
+            visibility: hidden;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/logo-wide.png" alt="DataMeter Logo" class="logo">
+    <h2>DataMeter Settings</h2>
+    <label for="quality">Default Viewing Quality:</label>
+    <select id="quality">
+        <option value="144p">144p</option>
+        <option value="240p">240p</option>
+        <option value="360p">360p</option>
+        <option value="480p">480p</option>
+        <option value="720p">720p</option>
+        <option value="1080p">1080p</option>
+        <option value="1440p">1440p</option>
+        <option value="2160p">2160p</option>
+    </select>
+    <button id="save">Save Settings</button>
+    <div id="status">Settings saved!</div>
+    <script src="popup.js"></script>
+    <footer style="text-align: center; margin-top: 20px;">
+        Built by <a href="https://twitter.com/tejitopia" target="_blank">TEJI</a>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>
